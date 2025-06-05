@@ -1,0 +1,15 @@
+# ?????
+
+server:
+    port: 8080
+
+spring:
+    datasource:
+        # database Driver
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        # database URL
+        url: jdbc:mysql://localhost:3306/oj_db
+        # username
+        username: yyk
+        # password
+        password: 123456
