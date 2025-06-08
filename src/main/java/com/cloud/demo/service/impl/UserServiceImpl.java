@@ -2,7 +2,7 @@ package com.cloud.demo.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.cloud.demo.Mapper.UserMapper;
-import com.cloud.demo.exception.CustomException;
+import com.cloud.demo.exception.BusinessException;
 import com.cloud.demo.model.entity.User;
 import com.cloud.demo.service.UserService;
 import org.apache.commons.lang3.StringUtils;
@@ -13,7 +13,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
     public long userRegister(String username, String password, String checkedPassword){
         if(StringUtils.isAnyBlank(username, password, checkedPassword)){
-            throw new CustomException("字符不能为空", 404);
+            throw new BusinessException(404, "字符不能为空");
         }
 
         return 0;
