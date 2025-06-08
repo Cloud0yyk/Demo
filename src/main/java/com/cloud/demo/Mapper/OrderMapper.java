@@ -1,7 +1,7 @@
 package com.cloud.demo.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.cloud.demo.model.entity.Order;
+import com.cloud.demo.pojo.entity.Order;
 
 public interface OrderMapper extends BaseMapper<Order> {
 }
