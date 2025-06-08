@@ -8,7 +8,7 @@ spring:
         # database Driver
         driver-class-name: com.mysql.cj.jdbc.Driver
         # database URL
-        url: jdbc:mysql://localhost:3306/oj_db
+        url: jdbc:mysql://localhost:3306/demo
         # username
         username: yyk
         # password

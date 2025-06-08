@@ -78,7 +78,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.cloud.demo.DemoApplication</mainClass>
+                    <mainClass>com.cloud.demo.MainApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

@@ -5,24 +5,30 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 
 import java.io.Serializable;
 
 @TableName
-@Getter
-@Builder
+@Data
 public class User implements Serializable {
     @TableId(type = IdType.ASSIGN_ID)
-    private Long userId;
+    private Long id;
 
-    @TableField
+    /**
+     * 用户名
+     */
     private String username;
 
-    @TableField
+    /**
+     * 密码
+     */
     private String password;
 
-    @TableField
+    /**
+     * 是否为管理员
+     */
     private Boolean isAdmin = false;
 
     @TableField(exist = false)
