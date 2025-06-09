@@ -6,20 +6,18 @@ import com.cloud.demo.Mapper.UserMapper;
 import com.cloud.demo.common.ErrorCode;
 import com.cloud.demo.exception.BusinessException;
 import com.cloud.demo.pojo.entity.User;
-import com.cloud.demo.service.UserService;
+import com.cloud.demo.service.IUserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
-import java.util.UUID;
-
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
     // 加密字符
     private final String SALT = "cloud";
 
-    public long userRegister(String username, String password, String checkedPassword){
+    public void userRegister(String username, String password, String checkedPassword){
         if(StringUtils.isAnyBlank(username, password, checkedPassword)){
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "请求参数不能为空！");
         }
