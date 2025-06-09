@@ -48,7 +48,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             if(!saveResult) {
                 throw new BusinessException(ErrorCode.SYSTEM_ERROR, "数据库注册错误！");
             }
-            return user.getId();
         }
     }
 
