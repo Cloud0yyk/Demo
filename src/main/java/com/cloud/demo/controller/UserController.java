@@ -7,10 +7,7 @@ import com.cloud.demo.service.IUserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/user")
@@ -19,7 +16,7 @@ public class UserController {
     @Autowired
     private IUserService userService;
 
-    @PutMapping("/register")
+    @PostMapping
     @Operation(summary = "用户注册", description = "传入用户名和密码")
     public BaseResponse<Long> userRegister(@RequestParam String username, @RequestParam String password, @RequestParam String checkedPassword) {
         userService.userRegister(username, password, checkedPassword);
