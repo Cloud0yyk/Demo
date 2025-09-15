@@ -3,7 +3,7 @@ package com.cloud.demo.pojo.vo;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class GoodsVO implements Serializable {
+public class ProductVO implements Serializable {
     private Long goodsId;
 
     private String name;
