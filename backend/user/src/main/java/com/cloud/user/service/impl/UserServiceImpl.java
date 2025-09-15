@@ -26,7 +26,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "二次输入的密码不一致！");
         }
 
-
         synchronized (username.intern()){
             // 账号名非重复
             QueryWrapper<User> queryWrapper = new QueryWrapper<>();

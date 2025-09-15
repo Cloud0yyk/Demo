@@ -1,8 +1,8 @@
 package com.cloud.common.exception;
 
-import com.cloud.user.common.BaseResponse;
-import com.cloud.user.common.ErrorCode;
-import com.cloud.user.common.ResponseUtil;
+import com.cloud.common.response.BaseResponse;
+import com.cloud.common.response.ErrorCode;
+import com.cloud.common.response.ResponseUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

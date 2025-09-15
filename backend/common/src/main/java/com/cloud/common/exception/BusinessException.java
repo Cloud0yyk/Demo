@@ -1,6 +1,6 @@
 package com.cloud.common.exception;
 
-import com.cloud.user.common.ErrorCode;
+import com.cloud.common.response.ErrorCode;
 import lombok.Getter;
 
 @Getter

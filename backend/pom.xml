@@ -77,6 +77,18 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>com.cloud</groupId>
+                <artifactId>common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.cloud</groupId>
+                <artifactId>user</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
