@@ -11,7 +11,9 @@ public enum ErrorCode {
     SYSTEM_ERROR(500, "系统内部异常"),
     OPERATION_ERROR(50001, "操作失败"),        // 500 业务操作失败
     API_REQUEST_ERROR(50010, "接口调用失败"),   // 500 第三方API调用失败
-    SERVER_BUSY(503, "服务器正忙，请稍后再试");
+    SERVER_BUSY(503, "服务器正忙，请稍后再试"),
+
+    FAIL(0, "服务器错误");
 
 
     private final int code;

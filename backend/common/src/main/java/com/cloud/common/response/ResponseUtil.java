@@ -4,12 +4,8 @@ import com.cloud.common.response.BaseResponse;
 import com.cloud.common.response.ErrorCode;
 
 public class ResponseUtil {
-    public static BaseResponse<Void> error(ErrorCode errorCode) {
-        return new BaseResponse<>(errorCode.getCode(), errorCode.getMessage(), null);
-    }
-
-    public static BaseResponse<Void> error(ErrorCode errorCode, String message) {
-        return new BaseResponse<>(errorCode.getCode(), message, null);
+    public static BaseResponse<Void> error(int code, String message) {
+        return new BaseResponse<>(code, message, null);
     }
 
     public static <T> BaseResponse<T> success(T data) {

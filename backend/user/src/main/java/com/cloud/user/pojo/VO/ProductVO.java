@@ -1,4 +1,4 @@
-package com.cloud.user.pojo.vo;
+package com.cloud.user.pojo.VO;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
