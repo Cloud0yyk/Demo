@@ -1,4 +1,4 @@
-package com.cloud.user.pojo.entity;
+package com.cloud.product.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -11,24 +11,44 @@ import java.util.Date;
 
 @TableName
 @Data
-public class Order implements Serializable {
+public class Product implements Serializable {
     @TableId(type = IdType.AUTO)
     private Long id;
 
     /**
-     * 创建订单的用户id
+     * 商品名
      */
-    private Long userId;
+    private String name;
 
     /**
-     * 订单关联的商品id
+     * 原始商品价格
      */
-    private Long goodsId;
+    private Double price;
 
     /**
-     * 订单创建时间
+     * 秒杀商品价格
+     */
+    private Double discountPrice; // 秒杀商品价格
+
+    /**
+     * 库存量
+     */
+    private Integer stock;
+
+    /**
+     * 创建时间
      */
     private Date createTime;
+
+    /**
+     * 秒杀开始时间
+     */
+    private Date startTime;
+
+    /**
+     * 秒杀结束时间
+     */
+    private Date endTime;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

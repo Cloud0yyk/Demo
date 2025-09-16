@@ -1,7 +1,7 @@
-package com.cloud.user.Mapper;
+package com.cloud.product.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.cloud.user.pojo.entity.Order;
+import com.cloud.product.pojo.entity.Order;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

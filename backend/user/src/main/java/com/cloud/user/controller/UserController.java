@@ -1,8 +1,8 @@
 package com.cloud.user.controller;
 
 
-import com.cloud.user.common.BaseResponse;
-import com.cloud.user.common.ResponseUtil;
+import com.cloud.common.response.BaseResponse;
+import com.cloud.common.response.ResponseUtil;
 import com.cloud.user.pojo.VO.UserLoginVO;
 import com.cloud.user.pojo.VO.UserRegisterVO;
 import com.cloud.user.service.IUserService;
